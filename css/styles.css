@@ -1,0 +1,364 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+:root {
+    /*Defined variable for a commonly used color*/
+    --wachusettGreen: #1B5E20;
+}
+
+*{
+    transition: all .5s;
+}
+
+
+body {
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pgcontent{
+    padding-top: 80px;
+    margin: 0px 10px 10px 10px;
+}
+
+.wlogo {
+    width: 3rem;
+    vertical-align: text-bottom;
+}
+.title {
+    font-size: 2rem
+}
+
+.navbar {
+    display: block;
+    right: 0;
+    left: 0;
+    float: left;
+    width: 100%;
+    z-index: 9999;
+    transition: background-color .5s;
+}
+
+
+.navbarbutton {
+    color: white;
+    font-family: "Segoe UI";
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: all .2s ease-out;
+    background-color: var(--wachusettGreen);
+    margin: 10px;
+}
+
+    .navbarbutton:hover {
+        font-family: "Segoe UI";
+        box-shadow: 0px 0px 3px 0px black;
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--wachusettGreen);
+    }
+
+.navbarbutton-cur {
+    font-family: "Segoe UI";
+    color: black;
+    box-shadow: 0px 0px 0px 3px black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbarbutton:active {
+    font-family: "Segoe UI";
+    color: black;
+    box-shadow: 0px 0px 2px 0px black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Navbar should look different on mobile*/
+@media (max-width: 992px) {
+    .navbar {
+        background-color: var(--wachusettGreen);
+    }
+    .navbarbutton {
+        color: white;
+        font-family: "Segoe UI";
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        transition: all .2s ease-out;
+        background-color: var(--wachusettGreen);
+        margin: 0px;
+    }
+
+        .navbarbutton:hover {
+            font-family: "Segoe UI";
+            box-shadow: 0px 0px 0px 2px black inset;
+            color: black;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+        }
+
+    .navbarbutton-cur {
+        font-family: "Segoe UI";
+        color: black;
+        box-shadow: 0px 0px 0px 3px black inset;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .navbarbutton:active {
+        font-family: "Segoe UI";
+        color: black;
+        box-shadow: 0px 0px 0px 3px black inset;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+
+.newsbanner {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 6px 20px 0px #868e96;
+}
+
+.big-image {
+    border: solid var(--wachusettGreen) 5px;
+    margin: 10px;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
+}
+
+.playertable {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
+    background-color: white;
+}
+
+.playertable-head {
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+}
+
+.playertable-player-name{
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+}
+
+.playertable-player-number {
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+}
+
+.home-top-jumbotron {
+    border-color: var(--wachusettGreen);
+    border: solid 1px;
+    background-color: var(--wachusettGreen);
+    color: white;
+    padding: 5px;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
+}
+
+.navtoggle{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: auto
+}
+
+.news {
+    background-color: white;
+    border: solid 5px var(--wachusettGreen);
+    text-align: center;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
+}
+
+.socialicons {
+    text-align: center;
+    font-size: 60px;
+}
+
+.social-twitter {
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(10,10,10,1);
+    -webkit-text-stroke: 0px dodgerblue;
+    transition: all .55s cubic-bezier(0.46, 1.8, 0.51, 1);
+    width: 100%;
+}
+
+    .social-twitter:hover {
+        color: dodgerblue;
+        transform: scale(1.2);
+        -webkit-text-stroke: 1px white;
+        text-shadow: 0px 0px 10px white;
+    }
+
+.social-phone {
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(10,10,10,0.5);
+    -webkit-text-stroke: 0px #1B5E20;
+    transition: all .55s cubic-bezier(0.46, 1.8, 0.51, 1);
+}
+
+.social-phone:hover {
+    color: #1B5E20;
+    transform: scale(1.2);
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0px 0px 10px white;
+}
+
+.social-label {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle
+}
+
+.header{
+    text-align: center;
+}
+
+.scheduletable{
+    margin: 5px auto 5px auto;
+}
+
+.schedule-date {
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+}
+
+.schedule-opponent {
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+}
+
+.schedule-location {
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+}
+
+.schedule-result {
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+}
+@media (max-width: 700px) {
+    .scheduletable {
+        font-size: 10px;
+        padding: 0px
+    }
+}
+
+.iframe-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container-16x9 {
+    padding-bottom: 75%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+}
+
+/*Loading thing*/
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    animation: none !important;
+    margin: 5% auto;
+    left: 0;
+    right: 0;
+    position: fixed;
+    transform: scale(2);
+}
+
+.load1 {
+    /*Loading Circle Green Part*/
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.load2 {
+    /*Loading Circle White Part*/
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation-delay: -.5s;
+}
+
+/*The animation for it*/
+@keyframes sk-stretchdelay {
+
+    0% {
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        opacity: 0;
+    }
+
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+/*When you scroll down a little bit, the navbar becomes a bit smaller and has a background*/
+.navbar.sticky {
+    background-color: var(--wachusettGreen);
+}
+
+    .navbar.sticky .navbarbutton {
+        margin: 0px;
+    }
+
+        .navbar.sticky .navbarbutton:hover {
+            box-shadow: 0px 0px 0px 2px black inset;
+            color: black;
+            background-color: white;
+        }
+
+        .navbar.sticky .navbarbutton:active {
+            color: black;
+            box-shadow: 0px 0px 0px 3px black inset;
+            background-color: white;
+        }
+
+    .navbar.sticky .navbarbutton-cur {
+        color: black;
+        box-shadow: 0px 0px 0px 3px black inset;
+        background-color: white;
+    }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .pgcontent {
+    padding-top: 60px;
+}
+
