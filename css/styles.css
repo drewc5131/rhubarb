@@ -1,7 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
 :root {
     /*Defined variable for a commonly used color*/
-    --wachusettGreen: #1B5E20;
+    --wachusettGreen: rgb(121, 0, 30);
 }
 
 *{
