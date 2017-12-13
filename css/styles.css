@@ -160,7 +160,7 @@ body {
     border: solid 1px;
     background-color: var(--wachusettGreen);
     color: white;
-    padding: 5px;
+    margin-bottom: 0px !important;
     box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }
 
