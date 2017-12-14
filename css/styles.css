@@ -1,4 +1,7 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+﻿@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+*{font-family: 'Slabo 27px', serif;}
+
 :root {
     /*Defined variable for a commonly used color*/
     --wachusettGreen: rgb(121, 0, 30);
@@ -361,3 +364,6 @@ body {
     padding-top: 60px;
 }
 
+.link-text {
+	color: rgb(155, 40, 69) !important;
+}
