@@ -1,6 +1,4 @@
 function doneLoading() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("content").style.display = "block";
     setupContent();
 }
 
@@ -87,6 +85,9 @@ function grabContent(pg) {
                     "     </div>" +
                     "</div>")
             }
+
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
 
 
         }
