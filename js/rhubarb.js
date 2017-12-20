@@ -74,7 +74,7 @@ function grabContent(pg) {
                 document.getElementById('dataplace').innerHTML += ("<div class=\"col-md-4\">" +
                     " <div class=\"card\">" +
                     "     <div class=\"card-image waves-effect waves-block waves-rhubarb\">" +
-                    "         <img class=\"activator\" src=\"assets/"+items[bigdata].image+"\">" +
+                    "         <img class=\"activator\" src=\""+items[bigdata].image+"\">" +
                     "  </div>" +
                     "         <div class=\"card-content\"> " +
                     "             <span class=\"card-title activator grey-text text-darken-4\">"+items[bigdata].title+"<i class=\"fa float-right fa-ellipsis-v\"></i></span> " +
