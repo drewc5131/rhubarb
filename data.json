@@ -1,14 +1,14 @@
 {
   "poetry": [
     {
-      "title": "test2",
+      "title": "Test1",
       "author": "jeff",
-      "image": "None",
+      "image": "rhubarb.png",
       "content": "HELLO FAM<br>THIS IS THE GREATEST THING DX"
     },
     {
       "title": "yea",
-      "author": "dab",
+      "author": "Person name thing",
       "image": "None",
       "content": "Welcome to dab This is a great meme"
     }

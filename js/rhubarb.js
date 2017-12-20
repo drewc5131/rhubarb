@@ -73,8 +73,8 @@ function grabContent(pg) {
             for (bigdata in items) {
                 document.getElementById('dataplace').innerHTML += ("<div class=\"col-md-4\">" +
                     " <div class=\"card\">" +
-                    "     <div class=\"card-image waves-effect waves-block waves-light\">" +
-                    "         <img class=\"activator\" src=\"images/"+items[bigdata].content+"\">" +
+                    "     <div class=\"card-image waves-effect waves-block waves-rhubarb\">" +
+                    "         <img class=\"activator\" src=\"assets/"+items[bigdata].image+"\">" +
                     "  </div>" +
                     "         <div class=\"card-content\"> " +
                     "             <span class=\"card-title activator grey-text text-darken-4\">"+items[bigdata].title+"<i class=\"fa float-right fa-ellipsis-v\"></i></span> " +
