@@ -1,6 +1,7 @@
 function doneLoading() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("content").style.display = "block";
+    setupContent();
 }
 
 
@@ -48,4 +49,49 @@ function myFunction() {
     } else {
         navbar.classList.remove("sticky");
     }
-} 
+}
+
+
+
+function setupContent() {
+    var fileName = location.pathname.split("/").slice(-1)
+    console.log(fileName[0]);
+    grabContent(fileName[0])
+}
+
+var items;
+function grabContent(pg) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText)
+            var data = JSON.parse(this.responseText);
+            if (pg == "poetry.html") {
+                items = data.poetry
+            }
+            console.log(data);
+            for (bigdata in items) {
+                document.getElementById('dataplace').innerHTML += ("<div class=\"col-md-4\">" +
+                    " <div class=\"card\">" +
+                    "     <div class=\"card-image waves-effect waves-block waves-light\">" +
+                    "         <img class=\"activator\" src=\"images/"+items[bigdata].content+"\">" +
+                    "  </div>" +
+                    "         <div class=\"card-content\"> " +
+                    "             <span class=\"card-title activator grey-text text-darken-4\">"+items[bigdata].title+"<i class=\"fa float-right fa-ellipsis-v\"></i></span> " +
+                    "             <em>by "+items[bigdata].author+"</em> " +
+                    "         </div>" +
+                    "         <div class=\"card-reveal\">" +
+                    "             <span class=\"card-title grey-text text-darken-4\">"+items[bigdata].title+"<i class=\"material-icons right\">close</i></span>" +
+                    "             <p>" + items[bigdata].content +"</p>" +
+                    "         </div>" +
+                    "     </div>" +
+                    "</div>")
+            }
+
+
+        }
+    };
+    xmlhttp.open("GET", "data.json", true);
+    xmlhttp.overrideMimeType("application/json");
+    xmlhttp.send();
+}
