@@ -12,5 +12,32 @@
       "image": "None",
       "content": "Welcome to dab This is a great meme"
     }
+  ],
+
+  "fiction": [
+    {
+      "title": "fiction1",
+      "author": "AuthorMan",
+      "image": "None",
+      "content": "lolxd"
+    },
+    {
+      "title": "fiction1",
+      "author": "AuthorMan",
+      "image": "None",
+      "content": "lolxd"
+    },
+    {
+      "title": "fiction1",
+      "author": "AuthorMan",
+      "image": "None",
+      "content": "lolxd"
+    },
+    {
+      "title": "fiction1",
+      "author": "AuthorMan",
+      "image": "None",
+      "content": "lolxd"
+    }
   ]
 }

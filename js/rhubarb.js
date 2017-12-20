@@ -1,5 +1,5 @@
 function doneLoading() {
-    setupContent();
+    setupContent()
 }
 
 
@@ -66,6 +66,9 @@ function grabContent(pg) {
             var data = JSON.parse(this.responseText);
             if (pg == "poetry.html") {
                 items = data.poetry
+            }
+            if (pg == "fiction.html") {
+                items = data.fiction
             }
             console.log(data);
             for (bigdata in items) {
