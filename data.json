@@ -16,10 +16,10 @@
 
   "fiction": [
     {
-      "title": "fiction1",
-      "author": "AuthorMan",
+      "title": "pubg update xd",
+      "author": "Feminism",
       "image": "None",
-      "content": "lolxd"
+      "content": "lol haha"
     },
     {
       "title": "fiction1",
@@ -38,6 +38,14 @@
       "author": "AuthorMan",
       "image": "None",
       "content": "lolxd"
+    }
+  ],
+  "visualart": [
+    {
+      "title": "My Shiny Teeth and Me",
+      "author": "Chip Skylark",
+      "image": "https://img.youtube.com/vi/Cz6FZBAHzeM/hqdefault.jpg?width=256&height=256",
+      "content": "<iframe src=\"https://www.youtube.com/embed/Cz6FZBAHzeM\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>"
     }
   ]
 }

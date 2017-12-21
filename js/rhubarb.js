@@ -70,10 +70,16 @@ function grabContent(pg) {
             if (pg == "fiction.html") {
                 items = data.fiction
             }
+            if (pg == "visualart.html"){
+                items = data.visualart
+            }
             console.log(data);
             for (bigdata in items) {
+                if (items[bigdata].image == "None") {
+                    items[bigdata].image = "assets/news.svg"
+                }
                 document.getElementById('dataplace').innerHTML += ("<div class=\"col-md-4\">" +
-                    " <div class=\"card\">" +
+                    " <div id=\"card\" style=\"opacity: 0\" class=\"card\">" +
                     "     <div class=\"card-image waves-effect waves-block waves-rhubarb\">" +
                     "         <img class=\"activator\" src=\""+items[bigdata].image+"\">" +
                     "  </div>" +
@@ -91,7 +97,7 @@ function grabContent(pg) {
 
             document.getElementById("loader").style.display = "none";
             document.getElementById("content").style.display = "block";
-
+            Materialize.showStaggeredList('#content'); // hehe i like that
 
         }
     };
