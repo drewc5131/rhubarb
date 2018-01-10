@@ -29,7 +29,7 @@ body {
     vertical-align: text-bottom;
 }
 .title {
-    font-size: 2rem
+    font-size: 2rem;
 }
 
 .navbar {
@@ -384,4 +384,6 @@ body {
 
 .page-title {
     font-family: 'Yellowtail', cursive;
+    
+    text-shadow: 1px 1px 1px black;
 }
