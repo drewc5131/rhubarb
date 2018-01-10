@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
 
 *{font-family: 'Slabo 27px', serif;}
 
@@ -28,7 +29,7 @@ body {
     vertical-align: text-bottom;
 }
 .title {
-    font-size: 2rem
+    font-size: 2rem;
 }
 
 .navbar {
@@ -172,9 +173,11 @@ body {
 .home-top-jumbotron {
     border-color: var(--wachusettGreen);
     border: solid 1px;
-    background-color: var(--wachusettGreen);
     margin-bottom: 0px !important;
     box-shadow: 0px 7px 4px rgba(10,10,10,0.25);
+    background-image: url("../assets/piebg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .navtoggle{
@@ -377,4 +380,10 @@ body {
 
 .link-text {
 	color: rgb(155, 40, 69) !important;
+}
+
+.page-title {
+    font-family: 'Yellowtail', cursive;
+    
+    text-shadow: 1px 1px 1px black;
 }
